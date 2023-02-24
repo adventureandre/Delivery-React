@@ -35,16 +35,16 @@ export function Sidebar(){
           </NavLink>
         </li>
         <li >
-          <a href="#" >
+          <NavLink to='drinks' >
             <SodaPopIcon/>
-            <span>Soda</span>
-          </a>
+            <span>Drinks</span>
+          </NavLink>
         </li>
         <li >
-          <a href="#" >
+          <NavLink to='ice-creams' >
             <IceCreamIcon/>
             <span>Sorvetes</span>
-          </a>
+          </NavLink>
         </li>
       </ul>
     </nav>
