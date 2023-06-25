@@ -1,27 +1,20 @@
+import { BrowserRouter } from 'react-router-dom'
 
-import {BrowserRouter} from 'react-router-dom'
+import { SnackProvider } from './contexts/SnackContext'
+import { AppRoutes } from './routes'
 
-import {AppRoutes} from './routes'
-
-import {Theme} from './styles/Theme'
-import {GlobalStyle} from './styles/global'
-import {Normalize} from 'styled-normalize'
-import {SnackProvider} from "./contexts/SnackContext";
-import React from "react";
-
-
-
-
-
+import { Normalize } from 'styled-normalize'
+import { GlobalStyle } from './styles/global'
+import { Theme } from './styles/Theme'
 
 export default function App() {
   return (
     <BrowserRouter>
       <Theme>
         <SnackProvider>
-          <AppRoutes/>
-          <GlobalStyle/>
-          <Normalize/>
+          <AppRoutes />
+          <GlobalStyle />
+          <Normalize />
         </SnackProvider>
       </Theme>
     </BrowserRouter>

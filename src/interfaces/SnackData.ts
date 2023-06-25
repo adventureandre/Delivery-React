@@ -1,8 +1,8 @@
-export interface SnackData{
+export interface SnackData {
   id: number
   snack: string
-  name:string
-  description:string
-  image:string
-  price:number
+  name: string
+  description: string
+  image: string
+  price: number
 }
