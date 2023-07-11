@@ -30,7 +30,8 @@
     "lint": "eslint src/**/*.{js,jsx,ts,tsx,json}",
     "lint:fix": "eslint --fix 'src/**/*.{js,jsx,ts,tsx,json}'",
     "format": "prettier --write 'src/**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc",
-    "json-server": "json-server --watch db.json --port 5000"
+    "json-server": "json-server --watch db.json --port 5000",
+    "build-and-start": "npm run build && json-server --watch db.json --port 5000"
   },
   "eslintConfig": {
     "extends": "react-app"
